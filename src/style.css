@@ -1,3 +1,4 @@
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -142,7 +143,7 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
+    padding: 1rem 1rem !important;
     font-size: 1.4rem !important;
     background-color: #181a27 !important;
   }
@@ -155,9 +156,14 @@ button:focus {
 }
 
 .logo {
-  height: 1.4em !important;
-  width: 2.5em !important;
+  height: 1.5em !important;
+  width: 3.6em !important;
 }
+/* .logo {
+  height: 4.7em !important;
+  width: 3.5em !important;
+ 
+} */
 
 .navbar-nav .nav-link {
   color: white !important;
@@ -409,6 +415,8 @@ button:focus {
 }
 .footer-copywright {
   text-align: center !important;
+  opacity: 0.4;
+  
 }
 
 .footer-body {
@@ -463,7 +471,7 @@ button:focus {
   box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
   color: white !important;
   background-color: transparent !important;
-  opacity: 0.9 !important;
+  opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
@@ -740,4 +748,258 @@ button:focus {
 }
 .fork-btn-inner::after {
   display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.education-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  position: relative; /* Ensure relative positioning for timeline */
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between cards */
+  width: 80%;
+  margin: 0 auto;
+  position: relative; /* Needed for absolute positioning of the timeline */
+}
+
+/* Timeline Vertical Line */
+.timeline {
+  width: 2px; /* Slightly thicker for visibility */
+  background: #c770f0;
+  position: absolute;
+  left: -30px; /* Adjust left position for better alignment */
+  top: 0;
+  bottom: 0; /* Ensures it extends the full height */
+
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: #c770f0;
+  border-radius: 50%;
+  position: absolute;
+  left: -6.5px; /* Center it over the timeline */
+}
+
+.experience-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  width: 100%;
+  border-left: 3px solid #c770f0;
+  box-shadow: 0 0 15px rgba(199, 112, 240, 0.3);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative; /* Ensures the timeline-dot positions correctly */
+}
+
+.experience-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(199, 112, 240, 0.5);
+  background: rgba(199, 112, 240, 0.1);
+}
+
+
+.project-title{
+border-bottom: 1px solid #c770f0;
+padding-bottom: 7px;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Form Container */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align form from the top */
+  height: 100vh;
+  background: #0a0a0a;
+  padding-top: 90px;
+  padding-bottom: 650px; /* Add top margin to avoid overlap with navbar */
+}
+
+.contact-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  width: 800px; /* Increased width for a much wider form */
+  text-align: left;
+}
+
+/* Contact Me Heading */
+.contact-form h2 {
+  color: #a855f7; /* Purple Theme */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+/* Form Labels */
+.form-group label {
+  color: #ddd;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Input and Textarea Fields */
+.form-group input,
+.form-group textarea {
+  background: transparent;
+  color: #ddd;
+  border: 2px solid #a855f7; /* Purple Border */
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  width: 100%;
+}
+
+/* Increase the size of the message textarea */
+.form-group textarea {
+  height: 180px; /* Increased height for the message textarea */
+}
+
+/* Glowing Effect on Focus */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #9333ea;
+  box-shadow: 0px 0px 8px rgba(168, 85, 247, 0.6);
+}
+
+/* Submit Button */
+.contact-form button {
+  background-color: #a855f7;
+  border: none;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #9333ea;
+  box-shadow: 0px 0px 10px rgba(168, 85, 247, 0.7);
+  transform: scale(1.03);
+}
+
+/* Success & Error Messages */
+.success-msg {
+  color: #4ade80;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .contact-form {
+    width: 70%; /* Adjust width for medium screens */
+  }
+
+  .contact-container {
+    padding-top: 60px; /* Adjust top padding for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    width: 90%; /* Adjust width for small screens */
+  }
+
+  .contact-container {
+    padding-top: 50px; /* Adjust top padding for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form {
+    width: 95%; /* Adjust width for very small screens */
+    
+  }
+
+  .contact-container {
+    padding-top: 130px; /* Adjust top padding for very small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-toast {
+  background-color: #1a1a1a !important; /* Black background */
+  color: #ffffff !important; /* White text */
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.custom-progress {
+  background: #8a2be2 !important; /* Purple progress bar */
 }

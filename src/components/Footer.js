@@ -14,10 +14,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Soumyajit Behera</h3>
+          {/* <h3>Designed and Developed by Soumyajit Behera</h3> */}
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
+          <h3>Copyright ©2024. All rights reserved by Asjad Afzaal</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
@@ -28,7 +28,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillGithub />
+                {/* <AiFillGithub /> */}
               </a>
             </li>
             <li className="social-icons">
@@ -38,7 +38,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                {/* <AiOutlineTwitter /> */}
               </a>
             </li>
             <li className="social-icons">
@@ -48,7 +48,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <FaLinkedinIn />
+                {/* <FaLinkedinIn /> */}
               </a>
             </li>
             <li className="social-icons">
@@ -58,7 +58,7 @@ function Footer() {
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiFillInstagram />
+                {/* <AiFillInstagram /> */}
               </a>
             </li>
           </ul>
